@@ -3,7 +3,9 @@ const result = document.getElementById(`main`);
 function isEven(number) {
   if (Array.isArray(number) || typeof number == 'string') {
     return number.length % 2 === 0;
-  } else if (typeof number === 'boolean') {
+  }
+
+  if (typeof number === 'boolean') {
     return number;
   }
 
